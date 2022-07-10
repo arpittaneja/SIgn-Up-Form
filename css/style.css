@@ -1,16 +1,28 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
 }
 
-html, body{
-    border: 2px solid red;
+html,
+body {
     height: 100%;
     width: 100%;
 }
 
-body{
+
+body {
     border: 2px solid black;
+    display: flex;
+    flex-flow: row nowrap;
 }
 
+.left-container {
+    border: 2px solid blue;
+    flex: 1;
+}
+
+.right-container {
+    border: 2px solid green;
+    flex: 1;
+}
