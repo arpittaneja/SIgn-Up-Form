@@ -1,3 +1,16 @@
-p{
-    color: red;
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
 }
+
+html, body{
+    border: 2px solid red;
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    border: 2px solid black;
+}
+
