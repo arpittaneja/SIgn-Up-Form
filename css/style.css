@@ -19,10 +19,31 @@ body {
 
 .left-container {
     border: 2px solid blue;
-    flex: 1;
+    flex: 1.5 1 auto;
+    background-image: url("../img/paris.avif");
+    background-size: cover;
+    background-position: center left;
 }
 
 .right-container {
     border: 2px solid green;
-    flex: 1;
+    flex: 2 1 auto;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.right-container div{
+    border: 2px solid black;
+}
+
+.upper-hero{
+    flex: 1 1 auto;
+}
+
+.form-container{
+    flex: 1.75 1 auto;
+}
+
+.lower-hero{
+    flex: 1 1 auto;
 }
