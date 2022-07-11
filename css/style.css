@@ -19,7 +19,7 @@ body {
 .left-container {
     border: 2px solid blue;
     flex: 1.25 0 0;
-    background-image: url("../img/paris.avif");
+    background-image: url("../img/landscape.jpg");
     background-size: cover;
     background-position: center left;
     display: flex;
@@ -29,6 +29,7 @@ body {
 img {
     width: 100px;
     height: auto;
+    /* -webkit-filter: invert(0.9); */
 }
 
 .upper-left-container {
@@ -56,28 +57,32 @@ img {
 }
 
 .head {
-    height: 100px;
+    height: 150px;
     width: 100%;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    gap: 0 30px;
+    gap: 0 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
-.foot {}
+.credits {
+    color: white;
+}
 
 
 .upper-right-container {
     /* height: 100px; */
+    padding: 30px;
     border: 2px solid black;
     flex: 1 1 auto;
     display: flex;
     flex-flow: row nowrap;
     align-items: flex-end;
-    justify-content: center;
-    padding-bottom: 20px;
+    justify-content: flex-start;
     /* overflow: visible; */
 }
 
@@ -90,7 +95,7 @@ img {
 
 .form-container {
     flex: 1.67 1 auto;
-    border: 10px solid blue !important;
+    /* border: 10px solid blue !important; */
     /* display: flex;
     flex-flow: column nowrap; */
     border: 1px solid black;
@@ -115,13 +120,13 @@ label{
 form fieldset {
     /* border: 10px solid blue; */
     width: max(80%, 300px);
-    padding: 20px 0;
     /* border: 3px solid red; */
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    gap: 20px 0;
+    gap: 40px 40px;
     position: relative;
+    padding: 30px 0;
     /* border: none; */
 }
 
@@ -129,17 +134,31 @@ legend{
     font-size: 1.5rem;
     position: absolute;
     left: 20px;
-    top: -52px;
+    top: -42px;
 }
 
 button {
     width: 160px;
     height: 35px;
     margin: 25px 35px;
+    background-color: rgb(178, 212, 252);
+    border-radius: 8px;
+    border: none;
 }
 
 button+div{
     font-size: 1rem;
-
     margin: 25px 35px;
+}
+
+input{
+    height: 22px;
+    width: max(15vw, 200px);
+    border-radius: 5px;
+    border: 2px solid #E5E7EB;
+}
+
+input:focus{
+    border: 2px solid rgb(164, 219, 240);
+    outline: none;
 }
