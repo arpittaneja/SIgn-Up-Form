@@ -2,7 +2,6 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-
 }
 
 html,
@@ -18,7 +17,6 @@ body {
 }
 
 .left-container {
-    /* border: 2px solid blue; */
     flex: 1.25 0 0;
     background-image: url("../img/landscape.jpg");
     background-size: cover;
@@ -30,7 +28,6 @@ body {
 img {
     width: 100px;
     height: auto;
-    /* -webkit-filter: invert(0.9); */
 }
 
 .upper-left-container {
@@ -50,18 +47,15 @@ img {
 }
 
 .right-container {
-    /* border: 2px solid green; */
     flex: 2 0 0;
     display: flex;
     flex-flow: column nowrap;
-    /* padding: max(75px, 10vw) 0; */
     font-family: 'Lato', sans-serif;    font-weight: 600;
 }
 
 .head {
     height: 150px;
     width: 100%;
-    /* border: 2px solid white; */
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -84,17 +78,13 @@ img {
 }
 
 .upper-right-container {
-    /* height: 100px; */
     padding: 30px;
-    /* border: 2px solid black; */
     flex: 1 1 auto;
     display: flex;
     flex-flow: row nowrap;
     align-items: flex-end;
     justify-content: flex-start;
     background-color: rgb(245, 251, 255);
-    /* overflow: visible; */
-    /* background-color: rgb(228, 225, 225); */
 }
 
 .text {
@@ -111,7 +101,6 @@ img {
     box-shadow:0 -3px 4.5px 0 #ddd;
     padding: 30px 0 0 25px;
     background-color: #fff;
-    
 }
 
 label {
@@ -122,13 +111,10 @@ label {
     width: 100%;
     background-color: #fff;
     box-shadow: 0 4.5px 4.5px 0 #ddd;
-    
 }
 
 form fieldset {
-    /* border: 10px solid blue; */
     width: max(80%, 300px);
-    /* border: 3px solid red; */
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -156,8 +142,8 @@ button {
 
 button:hover{
     background-color: rgb(196, 222, 249);
-    /* border: 2px inset rgb(223, 238, 255); */
 }
+
 button+div {
     font-size: 1rem;
     margin: 25px 35px;
@@ -168,7 +154,6 @@ input {
     width: max(15vw, 200px);
     border-radius: 5px;
     border: 2px solid #E5E7EB;
-    /* position: relative; */
 }
 
 input:focus {
@@ -178,7 +163,6 @@ input:focus {
 
 fieldset>div {
     position: relative;
-    /* border: 2px solid pink; */
 }
 
 input:required+span::after {
@@ -212,5 +196,4 @@ input:required+span::after {
 
 .form-container{
     background-color: rgb(245, 251, 255);
-
 }
