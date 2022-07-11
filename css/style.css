@@ -10,7 +10,6 @@ body {
     width: 100%;
 }
 
-
 body {
     border: 2px solid black;
     display: flex;
@@ -19,31 +18,128 @@ body {
 
 .left-container {
     border: 2px solid blue;
-    flex: 1.5 1 auto;
+    flex: 1.25 0 0;
     background-image: url("../img/paris.avif");
     background-size: cover;
     background-position: center left;
-}
-
-.right-container {
-    border: 2px solid green;
-    flex: 2 1 auto;
     display: flex;
     flex-flow: column nowrap;
 }
 
-.right-container div{
+img {
+    width: 100px;
+    height: auto;
+}
+
+.upper-left-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+
+}
+
+.lower-left-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 1;
+
+}
+
+.right-container {
+    border: 2px solid green;
+    flex: 2 0 0;
+    display: flex;
+    flex-flow: column nowrap;
+    /* padding: max(75px, 10vw) 0; */
+}
+
+.head {
+    height: 100px;
+    width: 100%;
+    border: 2px solid white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0 30px;
+}
+
+.foot {}
+
+
+.upper-right-container {
+    /* height: 100px; */
     border: 2px solid black;
-}
-
-.upper-hero{
     flex: 1 1 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 20px;
+    /* overflow: visible; */
 }
 
-.form-container{
-    flex: 1.75 1 auto;
+.text {
+    /* display: flex;
+    flex-flow: row wrap; */
+    border: 1px solid black;
+    width: clamp(20%, 450px, 70%);
 }
 
-.lower-hero{
-    flex: 1 1 auto;
+.form-container {
+    flex: 1.67 1 auto;
+    border: 10px solid blue !important;
+    /* display: flex;
+    flex-flow: column nowrap; */
+    border: 1px solid black;
+    /* justify-content: start; */
+    align-items: center;
+    padding-top: 50px;
+}
+
+.title{
+    padding: 10px;
+    font-size: 1.5rem;;
+}
+
+label{
+    font-size: 0.9rem;
+}
+.input-container {
+    width: 100%;
+    border: 1px solid pink;
+}
+
+form fieldset {
+    /* border: 10px solid blue; */
+    width: max(80%, 300px);
+    padding: 20px 0;
+    /* border: 3px solid red; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 20px 0;
+    position: relative;
+    /* border: none; */
+}
+
+legend{
+    font-size: 1.5rem;
+    position: absolute;
+    left: 20px;
+    top: -52px;
+}
+
+button {
+    width: 160px;
+    height: 35px;
+    margin: 25px 35px;
+}
+
+button+div{
+    font-size: 1rem;
+
+    margin: 25px 35px;
 }
