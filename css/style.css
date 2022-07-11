@@ -35,7 +35,6 @@ img {
     justify-content: center;
     align-items: center;
     flex: 1;
-
 }
 
 .lower-left-container {
@@ -92,7 +91,7 @@ img {
 }
 
 .form-container {
-    flex: 1.67 1 auto;
+    flex: 1.5 1 auto;
     align-items: center;
 }
 
@@ -118,7 +117,7 @@ form fieldset {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    gap: 40px 40px;
+    gap: 30px 40px;
     position: relative;
     padding: 40px 20px;
     border: none;
@@ -142,6 +141,13 @@ button {
 
 button:hover{
     background-color: rgb(196, 222, 249);
+    cursor: pointer;
+}
+
+button:active {
+    background-color: rgb(196, 222, 249);
+    box-shadow: 0 1px 2px #666;
+    transform: translateY(2px);
 }
 
 button+div {
@@ -191,7 +197,6 @@ input:required+span::after {
 
 .btn-container{
     background-color: rgb(245, 251, 255);
-    height: inherit;
 }
 
 .form-container{
