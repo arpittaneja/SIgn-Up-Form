@@ -50,7 +50,7 @@ img {
 }
 
 .right-container {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     flex: 2 0 0;
     display: flex;
     flex-flow: column nowrap;
@@ -154,6 +154,10 @@ button {
     border: none;
 }
 
+button:hover{
+    background-color: rgb(196, 222, 249);
+    /* border: 2px inset rgb(223, 238, 255); */
+}
 button+div {
     font-size: 1rem;
     margin: 25px 35px;
