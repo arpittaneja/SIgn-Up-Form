@@ -104,14 +104,16 @@ img {
     padding-top: 50px;
 }
 
-.title{
+.title {
     padding: 10px;
-    font-size: 1.5rem;;
+    font-size: 1.5rem;
+    ;
 }
 
-label{
+label {
     font-size: 0.9rem;
 }
+
 .input-container {
     width: 100%;
     border: 1px solid pink;
@@ -130,7 +132,7 @@ form fieldset {
     /* border: none; */
 }
 
-legend{
+legend {
     font-size: 1.5rem;
     position: absolute;
     left: 20px;
@@ -146,19 +148,49 @@ button {
     border: none;
 }
 
-button+div{
+button+div {
     font-size: 1rem;
     margin: 25px 35px;
 }
 
-input{
+input {
     height: 22px;
     width: max(15vw, 200px);
     border-radius: 5px;
     border: 2px solid #E5E7EB;
+    /* position: relative; */
 }
 
-input:focus{
+input:focus {
     border: 2px solid rgb(164, 219, 240);
     outline: none;
+}
+
+fieldset>div {
+    position: relative;
+    /* border: 2px solid pink; */
+}
+
+input:required+span::after {
+    content: "*";
+    color: red;
+    position: absolute;
+    right: 10px;
+    top: 1px;
+}
+
+.error {
+    border: 2px solid red;
+}
+
+.match-text{
+    position: absolute;
+    bottom: -15px;
+    color: red;
+    font-size: 0.7rem;
+    opacity: 0;
+}
+
+input:invalid{
+    border: 2px solid red;
 }
