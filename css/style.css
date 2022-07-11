@@ -97,8 +97,6 @@ img {
 }
 
 .text {
-    border: 1px solid #dadce0;
-    /* width: clamp(300px, 50vw, 85%); */
     font-size: clamp(1rem, 3vw, 1.5rem);
 }
 
