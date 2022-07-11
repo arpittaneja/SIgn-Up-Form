@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+
 }
 
 html,
@@ -54,6 +55,8 @@ img {
     display: flex;
     flex-flow: column nowrap;
     /* padding: max(75px, 10vw) 0; */
+    font-family: 'Comfortaa', cursive;
+    font-weight: 600;
 }
 
 .head {
@@ -67,6 +70,8 @@ img {
     gap: 0 20px;
     color: white;
     background-color: rgba(0, 0, 0, 0.3);
+    font-family: 'Cormorant SC', serif;
+    font-size: 3.5rem;
 }
 
 .credits {
@@ -111,7 +116,7 @@ img {
 }
 
 label {
-    font-size: 0.9rem;
+    font-size: 0.75rem;
 }
 
 .input-container {
@@ -191,6 +196,6 @@ input:required+span::after {
     opacity: 0;
 }
 
-input:invalid{
+/* input:invalid{
     border: 2px solid red;
-}
+} */

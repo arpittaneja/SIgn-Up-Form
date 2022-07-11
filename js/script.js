@@ -17,7 +17,7 @@ confirmPassword.addEventListener("keyup", function (e) {
         matchText.style.opacity = 1;
         password.classList.add("error");
         confirmPassword.classList.add("error");
-        confirmPassword.setCustomValidity('Passwords must be same');
+        confirmPassword.setCustomValidity('Passwords do not match!');
     }
 })
 
