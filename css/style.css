@@ -77,7 +77,6 @@ img {
     justify-content: center;
     align-items: flex-end;
     flex: 1;
-
 }
 
 .right-container {
@@ -98,7 +97,9 @@ img {
 }
 
 .text {
-    width: clamp(20%, 550px, 85%);
+    border: 1px solid #dadce0;
+    /* width: clamp(300px, 50vw, 85%); */
+    font-size: clamp(1rem, 3vw, 1.5rem);
 }
 
 .form-container {
@@ -124,7 +125,7 @@ label {
 }
 
 form fieldset {
-    width: max(80%, 300px);
+    width: clamp(300px, 50vw, 500px);
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
