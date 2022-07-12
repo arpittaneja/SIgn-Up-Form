@@ -123,13 +123,13 @@ label {
 }
 
 form fieldset {
-    width: clamp(300px, 50vw, 500px);
+    width: clamp(200px, 80%, 80vw);
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     gap: 30px 40px;
     position: relative;
-    padding: 40px 20px;
+    padding: 30px 20px;
     border: none;
 }
 
